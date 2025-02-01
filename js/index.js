@@ -1,31 +1,14 @@
 let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
-let skills = ["HTML","CSS","JavaScript","Bootstrap","jQuery","Angular","SCSS","TypeScript","Git & Github","Ecmascript 6","C# Basics","C# OOP","Advanced C#","SQL Server","LINQ","Dapper","Agile","Solid Principles","Design Patterns",
-    "Entity Framework Core","Entity Framework MVC","Entity Framework Web API","SignalR"
+let skills = ["HTML","CSS","JavaScript Dom","Bootstrap","Git & Github","C# Basics","C# OOP","Advanced C#","SQL Server","LINQ","Design Patterns",
+    "Entity Framework Core","Entity Framework MVC","Entity Framework Web API"
 ];
 let skillsResult = "";
 let ProjectsResult = "";
 let Projects = [
- {name:"Angora",link:"https://github.com/IslamQodeara7/Angora",category:"c1"},
- {name:"ACME-Angular",link:"https://github.com/IslamQodeara7/ACME-Angular",category:"c2"},
- {name:"Bakery",link:"https://github.com/IslamQodeara7/Bakery",category:"c1"},
- {name:"Start Angular",link:"https://github.com/IslamQodeara7/StartAngular",category:"c2"},
- {name:"Bookmark",link:"https://github.com/IslamQodeara7/Bookmark",category:"c1"},
- {name:"Food Recipes",link:"https://github.com/IslamQodeara7/Food-Recipes",category:"c1"},
- {name:"Local Time Watch",link:"https://github.com/IslamQodeara7/local-time-watch",category:"c1"},
- {name:"Movies DB",link:"https://github.com/IslamQodeara7/MovieDB",category:"c1"},
- {name:"Alex Smith",link:"https://github.com/IslamQodeara7/AlexSmith",category:"c1"},
- {name:"Nice Slider",link:"https://github.com/IslamQodeara7/HandMadeSlider",category:"c1"},
- {name:"Qoute of The Day",link:"https://github.com/IslamQodeara7/QouteOfTheDay",category:"c1"},
- {name:"Simone",link:"https://github.com/IslamQodeara7/Simone",category:"c1"},
- {name:"Smart Login System",link:"https://github.com/IslamQodeara7/SmartLoginSystem",category:"c1"},
- {name:"Weather Forecast",link:"https://github.com/IslamQodeara7/WeatherAPI",category:"c1"},
- {name:"Chicken Farms",link:"https://github.com/IslamQodeara7/chickenFarms",category:"c1"},
- {name:"Morph",link:"https://github.com/IslamQodeara7/broklyn",category:"c1"},
- {name:"Angular Notes 1",link:"https://github.com/IslamQodeara7/AngularNotes1",category:"c2"},
- {name:"Angular Notes 2",link:"https://github.com/IslamQodeara7/AngularNotes2",category:"c2"},
- {name:"Movies Database",link:"https://github.com/IslamQodeara7/MoviesDatabase",category:"c2"},
+ {name:"OOP Exam Creator and Solver",link:"https://github.com/IslamMohamedAhmed/CSharpExamCreatorAndSolver",category:"c1"},
+ 
 
 
 
@@ -81,6 +64,12 @@ $(document).ready(() => {
             document.documentElement.style.setProperty(color3, palette5.clr3);
             document.documentElement.style.setProperty(color4, palette5.clr4);
             break;
+        case 'six':
+            document.documentElement.style.setProperty(color1, palette6.clr1);
+            document.documentElement.style.setProperty(color2, palette6.clr2);
+            document.documentElement.style.setProperty(color3, palette6.clr3);
+            document.documentElement.style.setProperty(color4, palette6.clr4);
+            break;
 
 
 
@@ -91,28 +80,36 @@ $(document).ready(() => {
     Projects.forEach(item=>{
         switch(item.category){
             case "c1":
-                ProjectsResult+=` <div class="col-md-4 item  text-center p-3 c1">
-                <h5 class="text-center">
-                  
-                  <span>
+                ProjectsResult+=` 
+                 <div class="col-md-4 m-5 MainContainer text-center c1">
+        <div class="SecondaryContainer">
+           <span>
                     <a target="_blank" class="mx-2" href=${item.link}>
                       ${item.name}</a>
                   </span>
-                </h5>
-              
-              </div>`
+        </div>
+      </div> 
+             `
               break;
               case "c2":
-                ProjectsResult+=` <div class="col-md-4 item  text-center p-3 c2">
-                <h5 class="text-center">
-                  
-                  <span>
+                ProjectsResult+=` <div class="col-md-4 m-5 MainContainer text-center c2">
+        <div class="SecondaryContainer">
+           <span>
                     <a target="_blank" class="mx-2" href=${item.link}>
                       ${item.name}</a>
                   </span>
-                </h5>
-              
-              </div>`
+        </div>
+      </div> `
+              break;
+              case "c3":
+                ProjectsResult+=` <div class="col-md-4 m-5 MainContainer text-center c3">
+        <div class="SecondaryContainer">
+           <span>
+                    <a target="_blank" class="mx-2" href=${item.link}>
+                      ${item.name}</a>
+                  </span>
+        </div>
+      </div> `
               break;
         }
        
@@ -122,7 +119,7 @@ $(document).ready(() => {
 
     var mixer = mixitup(".videosItems", {
         selectors: {
-            target: '.videosItems .item'
+            target: '.videosItems .MainContainer'
         },
         animation: {
             duration: 300
@@ -155,10 +152,10 @@ let palette2 = {
     clr4: "#ffe79b"
 }
 let palette3 = {
-    clr1: "#2e0249",
-    clr2: "#570a57",
-    clr3: "#a91079",
-    clr4: "#f806cc"
+    clr1: "#F5F5F5",
+    clr2: "#48CFCB",
+    clr3: "#229799",
+    clr4: "#424242"
 }
 
 let palette4 = {
@@ -172,6 +169,12 @@ let palette5 = {
     clr2: "#183d3d",
     clr3: "#5c8374",
     clr4: "#93b1a6"
+}
+let palette6 = {
+    clr1: "#740938",
+    clr2: "#AF1740",
+    clr3: "#CC2B52",
+    clr4: "#DE7C7D"
 }
 
 
@@ -230,6 +233,15 @@ $('.palette5').click(() => {
     document.documentElement.style.setProperty(color2, palette5.clr2);
     document.documentElement.style.setProperty(color3, palette5.clr3);
     document.documentElement.style.setProperty(color4, palette5.clr4);
+
+});
+$('.palette6').click(() => {
+
+    localStorage.setItem('palette', 'six');
+    document.documentElement.style.setProperty(color1, palette6.clr1);
+    document.documentElement.style.setProperty(color2, palette6.clr2);
+    document.documentElement.style.setProperty(color3, palette6.clr3);
+    document.documentElement.style.setProperty(color4, palette6.clr4);
 
 });
 
