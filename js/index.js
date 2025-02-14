@@ -6,12 +6,24 @@ let skills = ["HTML","CSS","JavaScript Dom","Bootstrap","Git & Github","C# Basic
 ];
 let skillsResult = "";
 let ProjectsResult = "";
+let CertificatesResult = "";
 let Projects = [
  {name:"OOP Exam Creator and Solver",link:"https://github.com/IslamMohamedAhmed/CSharpExamCreatorAndSolver",category:"c1"},
+ {name:"Employees in Departments",link:"https://github.com/IslamMohamedAhmed/MVC-Project-2---with-Roles",category:"c2"},
+ {name:"E-Commerce",link:"https://github.com/IslamMohamedAhmed/E-commerce-Talabat-Original",category:"c3"},
  
 
 
 
+]
+
+let certificates =[
+    {topic:"Databases",Source:"Manara Tech",ImageSource:"Certificates/Certificate 1 DB.png"},
+    {topic:"Relational Databases with Sql",Source:"Manara Tech",ImageSource:"Certificates/Certificate 2 DB.png"},
+    {topic:"Foundation of Databases",Source:"Manara Tech",ImageSource:"Certificates/Certificate 3 DB.png"},
+    {topic:"English B1 Level Completion",Source:"4Level1",ImageSource:"Certificates/Certificate 4 4l1.png"},
+    {topic:"Asp .Net Backend Diploma",Source:"Route Academy",ImageSource:"Certificates/Certificate 5 r.png"},
+    
 ]
 
 
@@ -81,41 +93,65 @@ $(document).ready(() => {
         switch(item.category){
             case "c1":
                 ProjectsResult+=` 
-                 <div class="col-md-4 m-5 MainContainer text-center c1">
+                 <div  class="col-md-4 m-5 MainContainer text-center c1">
         <div class="SecondaryContainer">
            <span>
                     <a target="_blank" class="mx-2" href=${item.link}>
                       ${item.name}</a>
                   </span>
+                  <div class="category">OOP</div>
         </div>
+       
       </div> 
              `
               break;
               case "c2":
-                ProjectsResult+=` <div class="col-md-4 m-5 MainContainer text-center c2">
+                ProjectsResult+=` <div  class="col-md-4 m-5 MainContainer text-center c2">
         <div class="SecondaryContainer">
            <span>
                     <a target="_blank" class="mx-2" href=${item.link}>
                       ${item.name}</a>
                   </span>
+                  <div class="category">MVC</div>
         </div>
       </div> `
               break;
               case "c3":
-                ProjectsResult+=` <div class="col-md-4 m-5 MainContainer text-center c3">
+                ProjectsResult+=` <div  class="col-md-4 m-5 MainContainer text-center c3">
         <div class="SecondaryContainer">
            <span>
                     <a target="_blank" class="mx-2" href=${item.link}>
                       ${item.name}</a>
                   </span>
+                  <div class="category">Web API</div>
         </div>
       </div> `
               break;
         }
        
-    })
+    });
+
+    certificates.forEach(item=>{
+       CertificatesResult+=`
+        <div data-aos="zoom-out" class="my-5 certificatesItems col-md-4">
+       
+      <div class="item">
+        <div>
+        
+        <img src="${item.ImageSource}" class="w-100" alt=""></div>
+        <div  class="Info text-center">
+          <div>${item.topic}</div>
+          <div>${item.Source}</div>
+        </div>
+      </div>
+
+      </div>
+       
+       `      
+    });
 
     $(".videosItems").html(ProjectsResult);
+    $(".certificatesImages").html(CertificatesResult);
 
     var mixer = mixitup(".videosItems", {
         selectors: {
@@ -250,7 +286,7 @@ $('.palette6').click(() => {
 
 setInterval(() => {
     quote++;
-    if (quote > 6) {
+    if (quote > 3) {
         quote = 1;
     }
     $(`.myName${quote}`).css({ display: 'inline-block' });

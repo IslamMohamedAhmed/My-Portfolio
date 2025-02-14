@@ -286,7 +286,8 @@ footer .contactLinks a i {
 .skills h2 .txt::first-letter,
 .aboutMe h2 .txt::first-letter,
 .services h2 .txt::first-letter,
-.portfolio h2 .txt::first-letter {
+.portfolio h2 .txt::first-letter,
+.certificates h2 .txt::first-letter {
     color: var(--clr3);
     font-size: 100px;
 }
@@ -294,7 +295,8 @@ footer .contactLinks a i {
 .skills h2,
 .aboutMe h2,
 .services h2,
-.portfolio h2 {
+.portfolio h2,
+.certificates h2 {
     color: var(--clr4);
     display: flex;
     justify-content: center;
@@ -303,12 +305,18 @@ footer .contactLinks a i {
     margin: auto;
 }
 
-.skills h2 svg,
-.aboutMe h2 svg,
-.services h2 svg,
-.portfolio h2 svg {
-    animation: rotation 3s infinite;
+
+
+
+.certificates .certificatesImages .certificatesItems div img{
+   transform: scale(.8,.8);
+    border-radius: 50px 0px;
+    border: 20px double var(--clr4);
 }
+
+.certificates .certificatesImages .certificatesItems .Info{
+    color: var(--clr4);
+} 
 
 
 
@@ -495,6 +503,15 @@ iframe {
 
 }
 
+.SecondaryContainer .category{
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: var(--clr1);
+}
+
 
 
 
@@ -622,8 +639,12 @@ iframe {
     }
 
     footer .contactLinks a i {
-        font-size: 12.5px !important;
+        font-size: 30px !important;
 
+    }
+    footer .contactLinks a{
+        width: 50px;
+        height: 50px;
     }
 
     .aboutImage .image::before {
