@@ -11,6 +11,8 @@ let Projects = [
  {name:"OOP Exam Creator and Solver",link:"https://github.com/IslamMohamedAhmed/CSharpExamCreatorAndSolver",category:"c1"},
  {name:"Employees in Departments",link:"https://github.com/IslamMohamedAhmed/MVC-Project-2---with-Roles",category:"c2"},
  {name:"E-Commerce",link:"https://github.com/IslamMohamedAhmed/E-commerce-Talabat-Original",category:"c3"},
+ {name:"E-Tickets",link:"https://github.com/IslamMohamedAhmed/ETickets-MVC-Application",category:"c2"},
+ 
  
 
 
