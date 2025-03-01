@@ -12,6 +12,7 @@ let Projects = [
  {name:"Employees in Departments",link:"https://github.com/IslamMohamedAhmed/MVC-Project-2---with-Roles",category:"c2"},
  {name:"E-Commerce",link:"https://github.com/IslamMohamedAhmed/E-commerce-Talabat-Original",category:"c3"},
  {name:"E-Tickets",link:"https://github.com/IslamMohamedAhmed/ETickets-MVC-Application",category:"c2"},
+ {name:"IP Validation",link:"https://github.com/IslamMohamedAhmed/IpValidationAPI",category:"c3"},
  
  
 
@@ -83,6 +84,12 @@ $(document).ready(() => {
             document.documentElement.style.setProperty(color2, palette6.clr2);
             document.documentElement.style.setProperty(color3, palette6.clr3);
             document.documentElement.style.setProperty(color4, palette6.clr4);
+            break;
+        case 'seven':
+            document.documentElement.style.setProperty(color1, palette7.clr1);
+            document.documentElement.style.setProperty(color2, palette7.clr2);
+            document.documentElement.style.setProperty(color3, palette7.clr3);
+            document.documentElement.style.setProperty(color4, palette7.clr4);
             break;
 
 
@@ -214,6 +221,12 @@ let palette6 = {
     clr3: "#CC2B52",
     clr4: "#DE7C7D"
 }
+let palette7 = {
+    clr1: "#003092",
+    clr2: "#00879E",
+    clr3: "#FFAB5B",
+    clr4: "#FFF2DB"
+}
 
 
 
@@ -280,6 +293,15 @@ $('.palette6').click(() => {
     document.documentElement.style.setProperty(color2, palette6.clr2);
     document.documentElement.style.setProperty(color3, palette6.clr3);
     document.documentElement.style.setProperty(color4, palette6.clr4);
+
+});
+$('.palette7').click(() => {
+
+    localStorage.setItem('palette', 'seven');
+    document.documentElement.style.setProperty(color1, palette7.clr1);
+    document.documentElement.style.setProperty(color2, palette7.clr2);
+    document.documentElement.style.setProperty(color3, palette7.clr3);
+    document.documentElement.style.setProperty(color4, palette7.clr4);
 
 });
 
