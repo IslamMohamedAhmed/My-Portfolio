@@ -14,9 +14,8 @@ let certificates = [
     { topic: "Databases", Source: "Manara Tech", ImageSource: "Certificates/Certificate 1 DB.png" },
     { topic: "Relational Databases with Sql", Source: "Manara Tech", ImageSource: "Certificates/Certificate 2 DB.png" },
     { topic: "Foundation of Databases", Source: "Manara Tech", ImageSource: "Certificates/Certificate 3 DB.png" },
-    { topic: "Modern JavaScript", Source: "Manara Tech", ImageSource: "Certificates/Modern Js.png" },
-
-]
+    { topic: "Modern JavaScript", Source: "Manara Tech", ImageSource: "Certificates/Modern JS.png" }
+];
 
 
 
