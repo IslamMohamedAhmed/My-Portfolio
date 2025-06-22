@@ -1,32 +1,21 @@
 let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
-let skills = ["HTML","CSS","JavaScript Dom","Bootstrap","Git & Github","C# Basics","C# OOP","Advanced C#","SQL Server","LINQ","Design Patterns",
-    "Entity Framework Core","Entity Framework MVC","Entity Framework Web API"
+let skills = ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind", "jQuery", "TypeScript", "Angular"
+    , "Sass", "Express Js", "Mongoose", "Sequelize", "MySQL", "MongoDB"
 ];
 let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
- {name:"OOP Exam Creator and Solver",link:"https://github.com/IslamMohamedAhmed/CSharpExamCreatorAndSolver",category:"c1"},
- {name:"Employees in Departments",link:"https://github.com/IslamMohamedAhmed/MVC-Project-2---with-Roles",category:"c2"},
- {name:"E-Commerce",link:"https://github.com/IslamMohamedAhmed/E-commerce-Talabat-Original",category:"c3"},
- {name:"E-Tickets",link:"https://github.com/IslamMohamedAhmed/ETickets-MVC-Application",category:"c2"},
- {name:"IP Validation",link:"https://github.com/IslamMohamedAhmed/IpValidationAPI",category:"c3"},
- 
- 
+];
 
+let certificates = [
+    { topic: "Databases", Source: "Manara Tech", ImageSource: "Certificates/Certificate 1 DB.png" },
+    { topic: "Relational Databases with Sql", Source: "Manara Tech", ImageSource: "Certificates/Certificate 2 DB.png" },
+    { topic: "Foundation of Databases", Source: "Manara Tech", ImageSource: "Certificates/Certificate 3 DB.png" },
+    { topic: "Modern JavaScript", Source: "Manara Tech", ImageSource: "Certificates/Modern Js.png" },
 
-
-]
-
-let certificates =[
-    {topic:"Databases",Source:"Manara Tech",ImageSource:"Certificates/Certificate 1 DB.png"},
-    {topic:"Relational Databases with Sql",Source:"Manara Tech",ImageSource:"Certificates/Certificate 2 DB.png"},
-    {topic:"Foundation of Databases",Source:"Manara Tech",ImageSource:"Certificates/Certificate 3 DB.png"},
-    {topic:"English B1 Level Completion",Source:"4Level1",ImageSource:"Certificates/Certificate 4 4l1.png"},
-    {topic:"Asp .Net Backend Diploma",Source:"Route Academy",ImageSource:"Certificates/Certificate 5 r.png"},
-    
 ]
 
 
@@ -98,50 +87,27 @@ $(document).ready(() => {
     }
     AOS.init();
 
-    Projects.forEach(item=>{
-        switch(item.category){
-            case "c1":
-                ProjectsResult+=` 
-                 <div  class="col-md-4 m-5 MainContainer text-center c1">
-        <div class="SecondaryContainer">
-           <span>
-                    <a target="_blank" class="mx-2" href=${item.link}>
-                      ${item.name}</a>
-                  </span>
-                  <div class="category">OOP</div>
-        </div>
-       
-      </div> 
-             `
-              break;
-              case "c2":
-                ProjectsResult+=` <div  class="col-md-4 m-5 MainContainer text-center c2">
-        <div class="SecondaryContainer">
-           <span>
-                    <a target="_blank" class="mx-2" href=${item.link}>
-                      ${item.name}</a>
-                  </span>
-                  <div class="category">MVC</div>
-        </div>
-      </div> `
-              break;
-              case "c3":
-                ProjectsResult+=` <div  class="col-md-4 m-5 MainContainer text-center c3">
-        <div class="SecondaryContainer">
-           <span>
-                    <a target="_blank" class="mx-2" href=${item.link}>
-                      ${item.name}</a>
-                  </span>
-                  <div class="category">Web API</div>
-        </div>
-      </div> `
-              break;
-        }
-       
+    Projects.forEach(item => {
+        ProjectsResult += ` 
+        <div class="mainCon col-md-4 m-3 ${item.category}">
+<div class="secCon">
+<div class="Category">${item.type}</div>
+<div class="title">${item.name}</div>
+<div class="linkCon">
+<a href="${item.link}" target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+</div>
+
+</div>
+
+</div>
+
+  `
     });
 
-    certificates.forEach(item=>{
-       CertificatesResult+=`
+    certificates.forEach(item => {
+        CertificatesResult += `
         <div data-aos="zoom-out" class="my-5 certificatesItems col-md-4">
        
       <div class="item">
@@ -156,7 +122,7 @@ $(document).ready(() => {
 
       </div>
        
-       `      
+       `
     });
 
     $(".videosItems").html(ProjectsResult);
@@ -164,22 +130,22 @@ $(document).ready(() => {
 
     var mixer = mixitup(".videosItems", {
         selectors: {
-            target: '.videosItems .MainContainer'
+            target: '.videosItems .mainCon'
         },
         animation: {
             duration: 300
         }
     });
 
-    skills.forEach(item=>{
-        skillsResult+=`<li class="col-md-3 px-5" data-aos="fade-up">
+    skills.forEach(item => {
+        skillsResult += `<li class="col-md-3 px-5" data-aos="fade-up">
               <div class="my-3 py-3">${item}</div>
             </li>`
     });
 
-    
+
     $(".skillsItems").html(skillsResult);
-    
+
 
 })
 
@@ -310,7 +276,7 @@ $('.palette7').click(() => {
 
 setInterval(() => {
     quote++;
-    if (quote > 3) {
+    if (quote > 6) {
         quote = 1;
     }
     $(`.myName${quote}`).css({ display: 'inline-block' });
