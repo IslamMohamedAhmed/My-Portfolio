@@ -1,8 +1,9 @@
 let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
-let skills = ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind", "jQuery", "TypeScript", "Angular"
-    , "Sass", "Express Js", "Mongoose", "Sequelize", "MySQL", "MongoDB"
+let skills = ["JavaScript", "Postman", "TypeScript", "Express Js", "Mongoose", "Sequelize", "MySQL", "MongoDB", "Git", "Github", "Asynchronous Programming"
+    , "Relational Databases", "Non-relational Databases", "Nest Js", "Database Design", "Docker", "Web Sockets.io"
+    , "Restful API'S", "GraphQL"
 ];
 let skillsResult = "";
 let ProjectsResult = "";
@@ -181,10 +182,10 @@ let palette5 = {
     clr4: "#93b1a6"
 }
 let palette6 = {
-    clr1: "#740938",
-    clr2: "#AF1740",
-    clr3: "#CC2B52",
-    clr4: "#DE7C7D"
+    clr1: "#0c0c0c",
+    clr2: "#481e14",
+    clr3: "#9b3922",
+    clr4: "#f2613f"
 }
 let palette7 = {
     clr1: "#003092",
@@ -275,7 +276,7 @@ $('.palette7').click(() => {
 
 setInterval(() => {
     quote++;
-    if (quote > 6) {
+    if (quote > 3) {
         quote = 1;
     }
     $(`.myName${quote}`).css({ display: 'inline-block' });
