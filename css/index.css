@@ -249,7 +249,7 @@ footer .contactLinks a i {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -733,20 +733,10 @@ iframe {
     .services .serviceItem p.hintInfo{
         font-size: 15px;
     }
-    footer .contactLinks a {
-        width: 25px;
-        height: 25px;
-        margin: 10px 2.5px;
-    }
 
-    footer .contactLinks a i {
-        font-size: 30px !important;
 
-    }
-
-    footer .contactLinks a {
-        width: 50px;
-        height: 50px;
+    footer h1,footer h4{
+        font-size: 20px !important;
     }
 
     .aboutImage .image::before {
