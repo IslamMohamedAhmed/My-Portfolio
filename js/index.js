@@ -8,6 +8,7 @@ let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
+    { name: "Sticky-Notes", type: "Mongoose", category: "c2", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
 ];
 
 let certificates = [
