@@ -278,7 +278,7 @@ $('.palette7').click(() => {
 
 setInterval(() => {
     quote++;
-    if (quote > 6) {
+    if (quote > 3) {
         quote = 1;
     }
     $(`.myName${quote}`).css({ display: 'inline-block' });
