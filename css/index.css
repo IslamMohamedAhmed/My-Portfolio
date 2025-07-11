@@ -17,8 +17,8 @@ body {
 
 
 @font-face {
-    font-family: "jose";
-    src: url("../fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+    font-family: "akaya";
+    src: url("../webfonts/AkayaKanadaka-Regular.ttf");
 }
 
 
@@ -27,9 +27,8 @@ body {
 
 
 
-
 .fontType {
-    font-family: 'jose';
+    font-family: 'akaya';
 }
 
 .endline {
@@ -76,7 +75,7 @@ body {
 }
 
 .contactSide {
-    
+
     background-color: var(--clr4);
     position: fixed;
     top: 30%;
@@ -101,7 +100,8 @@ body {
     color: var(--clr3);
     border-color: var(--clr3);
 }
-.contactSide a i{
+
+.contactSide a i {
     font-size: 20px;
     margin-bottom: 5px;
 }
@@ -546,7 +546,7 @@ iframe {
     border-radius: 30px;
     padding: 0px;
     overflow: hidden;
-    
+
 }
 
 .secCon {
@@ -556,17 +556,19 @@ iframe {
     color: var(--clr1);
     transform: rotate(45deg);
     transition: all .5s;
-   
+
     padding: 20px;
 }
 
 .mainCon .secCon:hover {
     transform: rotate(0deg);
 }
-.mainCon .secCon:hover .linkCon{
+
+.mainCon .secCon:hover .linkCon {
     opacity: 1;
 }
-.mainCon .linkCon {  
+
+.mainCon .linkCon {
     width: 100%;
     margin: auto;
     opacity: 0;
@@ -586,11 +588,11 @@ iframe {
     font-size: 30px;
 }
 
-.mainCon .linkCon a:hover{
+.mainCon .linkCon a:hover {
     color: var(--clr3);
 }
 
-.mainCon .secCon{
+.mainCon .secCon {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -598,7 +600,7 @@ iframe {
 
 }
 
-.secCon div{
+.secCon div {
     text-align: center;
 }
 
@@ -702,7 +704,7 @@ iframe {
         display: flex;
     }
 
-   footer .contactLinks{
+    footer .contactLinks {
         display: none;
     }
 
@@ -730,12 +732,13 @@ iframe {
         font-size: 15px !important;
     }
 
-    .services .serviceItem p.hintInfo{
+    .services .serviceItem p.hintInfo {
         font-size: 15px;
     }
 
 
-    footer h1,footer h4{
+    footer h1,
+    footer h4 {
         font-size: 20px !important;
     }
 

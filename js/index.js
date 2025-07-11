@@ -2,7 +2,8 @@ let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
 let skills = ["JavaScript", "TypeScript", "Express Js", "Mongoose", "Sequelize", "MongoDB", "Git", "Github"
-    , "Nest Js", "Docker", "Web Sockets.io", "PostgreSQL", "GraphQL"
+    , "Nest Js", "Docker", "Sockets.io", "PostgreSQL", "GraphQL", "Nodemailer", "Asynchrounous Programming"
+    , "Relational Databases", "Non-relational Databases", "JWT",
 ];
 let skillsResult = "";
 let ProjectsResult = "";
@@ -277,7 +278,7 @@ $('.palette7').click(() => {
 
 setInterval(() => {
     quote++;
-    if (quote > 3) {
+    if (quote > 6) {
         quote = 1;
     }
     $(`.myName${quote}`).css({ display: 'inline-block' });
