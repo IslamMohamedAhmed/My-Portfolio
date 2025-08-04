@@ -9,8 +9,10 @@ let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
-    { name: "Sticky-Notes", type: "Mongoose", category: "c2", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
-    { name: "Saraha-App", type: "Mongoose", category: "c2", link: "https://github.com/IslamMohamedAhmed/Saraha-App" }
+    { name: "Sticky-Notes", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
+    { name: "Saraha-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
+    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
+
 ];
 
 let certificates = [
@@ -91,18 +93,24 @@ $(document).ready(() => {
 
     Projects.forEach(item => {
         ProjectsResult += ` 
-        <div class="mainCon col-md-4 m-3 ${item.category}">
+       <div class="col-md-2 py-5 d-flex justify-content-center align-item-center">
+        <div class="mainCon ${item.category}">
 <div class="secCon">
 <div class="Category">${item.type}</div>
-<div class="title">${item.name}</div>
+<div class="title fw-bolder">
+<i class="fa-solid fa-star"></i>
+${item.name}
+<i class="fa-solid fa-star"></i>
+</div>
 <div class="linkCon">
 <a href="${item.link}" target="_blank">
-<i class="fa-brands fa-github"></i>
+<i class="fa-solid fa-link"></i>
 </a>
 </div>
-
+<div class="fw-bold">${item.framework}
 </div>
-
+</div>
+</div>
 </div>
 
   `
