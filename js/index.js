@@ -11,7 +11,7 @@ let CertificatesResult = "";
 let Projects = [
     { name: "Sticky-Notes", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
     { name: "Saraha-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
-    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
+    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App" },
 
 ];
 
