@@ -1,10 +1,8 @@
 let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
-let skills = ["JavaScript", "TypeScript", "Express Js", "Mongoose", "Sequelize", "MongoDB", "Git", "Github"
-    , "Nest Js", "Docker", "Sockets.io", "PostgreSQL", "GraphQL", "Nodemailer", "Asynchrounous Programming"
-    , "Relational Databases", "Non-relational Databases", "JWT",
-];
+let skills = ["JavaScript", "Express Js", "Mongoose", "Postman", "MongoDB", "Git", "Github", "Asynchrounous Programming"
+    , "Restful API's"];
 let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
