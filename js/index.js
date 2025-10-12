@@ -2,14 +2,14 @@ let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
 let skills = ["JavaScript", "Express Js", "Mongoose", "Postman", "MongoDB", "Git", "Github", "Asynchrounous Programming"
-    , "Restful API's"];
+    , "Restful API's", "GraphQL API's", "TypeScript", "Nest Js", "Prisma", "PostgreSQL"];
 let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
     { name: "Sticky-Notes", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
     { name: "Saraha-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
-    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App" },
+    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App-Final" },
 
 ];
 
