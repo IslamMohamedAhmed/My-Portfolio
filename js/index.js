@@ -248,33 +248,7 @@ $('.theme4').click(() => {
     document.documentElement.style.setProperty(color4, palette4.clr4);
 
 });
-$('.palette5').click(() => {
 
-    localStorage.setItem('palette', 'five');
-    document.documentElement.style.setProperty(color1, palette5.clr1);
-    document.documentElement.style.setProperty(color2, palette5.clr2);
-    document.documentElement.style.setProperty(color3, palette5.clr3);
-    document.documentElement.style.setProperty(color4, palette5.clr4);
-
-});
-$('.palette6').click(() => {
-
-    localStorage.setItem('palette', 'six');
-    document.documentElement.style.setProperty(color1, palette6.clr1);
-    document.documentElement.style.setProperty(color2, palette6.clr2);
-    document.documentElement.style.setProperty(color3, palette6.clr3);
-    document.documentElement.style.setProperty(color4, palette6.clr4);
-
-});
-$('.palette7').click(() => {
-
-    localStorage.setItem('palette', 'seven');
-    document.documentElement.style.setProperty(color1, palette7.clr1);
-    document.documentElement.style.setProperty(color2, palette7.clr2);
-    document.documentElement.style.setProperty(color3, palette7.clr3);
-    document.documentElement.style.setProperty(color4, palette7.clr4);
-
-});
 
 
 
