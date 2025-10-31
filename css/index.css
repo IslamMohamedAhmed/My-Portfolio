@@ -80,15 +80,17 @@ body {
 
     background-color: var(--clr4);
     position: fixed;
-    top: 30%;
-    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
     display: none;
     justify-content: center;
     align-items: center;
     flex-flow: column;
     box-shadow: 5px 5px 10px var(--clr4);
-    border-radius: 15px;
-
+    border-radius: 15px 0px;
+    border-color: var(--clr1);
+    border-style: solid;
 }
 
 .contactSide a {
@@ -105,7 +107,6 @@ body {
 
 .contactSide a i {
     font-size: 20px;
-    margin-bottom: 5px;
 }
 
 .navbar {
@@ -153,6 +154,49 @@ body {
 
 .navbar ul.dropdown-menu {
     padding: 0px !important;
+}
+
+.theme1 a,
+.theme2 a,
+.theme3 a,
+.theme4 a{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--clr4);
+    border-radius: 15px 0px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: var(--clr1);
+    border-color: var(--clr1);
+    margin-bottom: 10px;
+}
+
+.themesList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: fixed;
+    top: 15%;
+    right: 10px;
+    flex-flow: column;
+    background-color: var(--clr4);
+    box-shadow: 5px 5px 10px var(--clr4);
+    border-radius: 15px 0px;
+    border-color: var(--clr1);
+    border-style: solid;
+    z-index: 200;
+}
+
+.themesList a:hover {
+    color: var(--clr3);
+    border-color: var(--clr3);
 }
 
 /* Footer Styling */
@@ -345,30 +389,6 @@ footer .contactLinks a i {
     width: 200px;
     height: 300px;
     position: relative;
-}
-
-.aboutImage .image::before {
-    content: "";
-    width: 35px;
-    height: 35px;
-    border-top: 10px solid var(--clr3);
-    border-left: 10px solid var(--clr3);
-    position: absolute;
-    top: -10%;
-    left: -10%;
-    animation: upper 1s infinite;
-}
-
-.aboutImage .image::after {
-    content: "";
-    width: 35px;
-    height: 35px;
-    border-bottom: 10px solid var(--clr3);
-    border-right: 10px solid var(--clr3);
-    position: absolute;
-    bottom: -10%;
-    right: -10%;
-    animation: lower 1s infinite;
 }
 
 .myName1,
@@ -742,22 +762,6 @@ iframe {
     footer h1,
     footer h4 {
         font-size: 20px !important;
-    }
-
-    .aboutImage .image::before {
-        width: 17.5px;
-        height: 17.5px;
-        border-top: 5px solid var(--clr3);
-        border-left: 5px solid var(--clr3);
-
-    }
-
-    .aboutImage .image::after {
-        width: 17.5px;
-        height: 17.5px;
-        border-bottom: 5px solid var(--clr3);
-        border-right: 5px solid var(--clr3);
-
     }
 
     .filterButtons button {

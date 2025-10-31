@@ -1,8 +1,40 @@
 let font = '';
 let paletteNumber = 'zero';
 let quote = 1;
-let skills = ["JavaScript", "Express Js", "Mongoose", "Postman", "MongoDB", "Git", "Github", "Asynchrounous Programming"
-    , "Restful API's", "GraphQL API's", "TypeScript", "Nest Js", "Prisma", "PostgreSQL"];
+/*
+ { name: "HTML", icon: `<i class="fs-1 devicon-html5-plain"></i>` },
+    { name: "CSS", icon: `<i class="fs-1 devicon-css3-plain"></i>` },
+    { name: "Bootstrap", icon: `<i class="fs-1 devicon-bootstrap-plain"></i>` },
+    { name: "rxjs", icon: `<i class="fs-1 devicon-rxjs-plain"></i>` },
+    { name: "jQuery", icon: `<i class="fs-1 devicon-jquery-plain"></i>` },
+    { name: "Angular", icon: `<i class="fs-1 devicon-angular-plain"></i>` },
+    { name: "Dev Icon", icon: `<i class="fs-1 devicon-devicon-plain"></i>` },
+ */
+let skills = [
+    { name: "VS Code", icon: `<i class="fs-1 devicon-vscode-plain"></i>` },
+    { name: "Node Js", icon: `<i class="fs-1 devicon-nodejs-plain"></i>` },
+    { name: "JavaScript", icon: `<i class="fs-1 devicon-javascript-plain"></i>` },
+    { name: "TypeScript", icon: `<i class="fs-1 devicon-typescript-plain"></i>` },
+    { name: "Express Js", icon: `<i class="fs-1 devicon-express-original"></i>` },
+    { name: "Nodemon", icon: `<i class="fs-1 devicon-nodemon-plain"></i>` },
+    { name: "Mongoose", icon: `<i class="fs-1 devicon-mongoose-original"></i>` },
+    { name: "MongoDB", icon: `<i class="fs-1 devicon-mongodb-plain"></i>` },
+    { name: "Prisma", icon: `<i class="fs-1 devicon-prisma-original"></i>` },
+    { name: "PostgreSQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
+    { name: "GraphQL API's", icon: `<i class="fs-1 devicon-graphql-plain"></i>` },
+    { name: "Nest Js", icon: `<i class="fs-1 devicon-nestjs-original"></i>` },
+    // { name: "Socket.io", icon: `<i class="fs-1 devicon-socketio-original"></i>` },
+    { name: "Git", icon: `<i class="fs-1 devicon-git-plain"></i>` },
+    { name: "Github", icon: `<i class="fs-1 devicon-github-original"></i>` },
+    { name: "Postman API", icon: `<i class="fs-1 devicon-postman-plain"></i>` },
+    { name: "Docker", icon: `<i class="fs-1 devicon-docker-plain"></i>` },
+    { name: "npm", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
+    { name: "JSON", icon: `<i class="fs-1 devicon-json-plain"></i>` },
+    { name: "rxjs", icon: `<i class="fs-1 devicon-rxjs-plain"></i>` },
+    // { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
+    { name: "MySql", icon: `<i class="fs-1 devicon-mysql-original"></i>` },
+    // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` },
+];
 let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
@@ -64,28 +96,6 @@ $(document).ready(() => {
             document.documentElement.style.setProperty(color3, palette4.clr3);
             document.documentElement.style.setProperty(color4, palette4.clr4);
             break;
-        case 'five':
-            document.documentElement.style.setProperty(color1, palette5.clr1);
-            document.documentElement.style.setProperty(color2, palette5.clr2);
-            document.documentElement.style.setProperty(color3, palette5.clr3);
-            document.documentElement.style.setProperty(color4, palette5.clr4);
-            break;
-        case 'six':
-            document.documentElement.style.setProperty(color1, palette6.clr1);
-            document.documentElement.style.setProperty(color2, palette6.clr2);
-            document.documentElement.style.setProperty(color3, palette6.clr3);
-            document.documentElement.style.setProperty(color4, palette6.clr4);
-            break;
-        case 'seven':
-            document.documentElement.style.setProperty(color1, palette7.clr1);
-            document.documentElement.style.setProperty(color2, palette7.clr2);
-            document.documentElement.style.setProperty(color3, palette7.clr3);
-            document.documentElement.style.setProperty(color4, palette7.clr4);
-            break;
-
-
-
-
     }
     AOS.init();
 
@@ -146,8 +156,9 @@ ${item.name}
     });
 
     skills.forEach(item => {
-        skillsResult += `<li class="col-md-3 px-5" data-aos="fade-up">
-              <div class="my-3 py-3">${item}</div>
+        skillsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
     });
 
@@ -158,49 +169,35 @@ ${item.name}
 })
 
 
+
 let palette1 = {
-    clr1: "#0c134f",
-    clr2: "#1d267d",
-    clr3: "#5c469c",
-    clr4: "#d4adfc"
-}
-let palette2 = {
-    clr1: "#40128b",
-    clr2: "#9336b4",
-    clr3: "#dd58d6",
-    clr4: "#ffe79b"
-}
-let palette3 = {
     clr1: "#F5F5F5",
     clr2: "#48CFCB",
     clr3: "#229799",
     clr4: "#424242"
 }
 
-let palette4 = {
+let palette2 = {
     clr1: "#fff5e0",
     clr2: "#ff6969",
     clr3: "#bb2525",
     clr4: "#141e46"
 }
-let palette5 = {
-    clr1: "#040d12",
-    clr2: "#183d3d",
-    clr3: "#5c8374",
-    clr4: "#93b1a6"
-}
-let palette6 = {
-    clr1: "#0c0c0c",
-    clr2: "#481e14",
-    clr3: "#9b3922",
-    clr4: "#f2613f"
-}
-let palette7 = {
-    clr1: "#003092",
+
+let palette3 = {
+    clr4: "#003092",
     clr2: "#00879E",
     clr3: "#FFAB5B",
-    clr4: "#FFF2DB"
+    clr1: "#FFF2DB"
 }
+
+let palette4 = {
+    clr4: "#FAEB92",
+    clr2: "#CC66DA",
+    clr3: "#9929EA",
+    clr1: "#000000"
+}
+
 
 
 
@@ -215,7 +212,7 @@ const color4 = "--clr4";
 
 
 
-$('.palette1').click(() => {
+$('.theme1').click(() => {
 
     localStorage.setItem('palette', 'one');
     document.documentElement.style.setProperty(color1, palette1.clr1);
@@ -224,7 +221,7 @@ $('.palette1').click(() => {
     document.documentElement.style.setProperty(color4, palette1.clr4);
 
 });
-$('.palette2').click(() => {
+$('.theme2').click(() => {
 
     localStorage.setItem('palette', 'two');
     document.documentElement.style.setProperty(color1, palette2.clr1);
@@ -233,7 +230,7 @@ $('.palette2').click(() => {
     document.documentElement.style.setProperty(color4, palette2.clr4);
 
 });
-$('.palette3').click(() => {
+$('.theme3').click(() => {
 
     localStorage.setItem('palette', 'three');
     document.documentElement.style.setProperty(color1, palette3.clr1);
@@ -242,7 +239,7 @@ $('.palette3').click(() => {
     document.documentElement.style.setProperty(color4, palette3.clr4);
 
 });
-$('.palette4').click(() => {
+$('.theme4').click(() => {
 
     localStorage.setItem('palette', 'four');
     document.documentElement.style.setProperty(color1, palette4.clr1);
