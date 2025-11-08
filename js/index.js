@@ -20,28 +20,29 @@ let skills = [
     { name: "Mongoose", icon: `<i class="fs-1 devicon-mongoose-original"></i>` },
     { name: "MongoDB", icon: `<i class="fs-1 devicon-mongodb-plain"></i>` },
     { name: "Prisma", icon: `<i class="fs-1 devicon-prisma-original"></i>` },
-    { name: "PostgreSQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
+    { name: "PostgresQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
     { name: "GraphQL API's", icon: `<i class="fs-1 devicon-graphql-plain"></i>` },
     { name: "Nest Js", icon: `<i class="fs-1 devicon-nestjs-original"></i>` },
-    // { name: "Socket.io", icon: `<i class="fs-1 devicon-socketio-original"></i>` },
+    { name: "Socket.io", icon: `<i class="fs-1 devicon-socketio-original"></i>` },
     { name: "Git", icon: `<i class="fs-1 devicon-git-plain"></i>` },
     { name: "Github", icon: `<i class="fs-1 devicon-github-original"></i>` },
     { name: "Postman API", icon: `<i class="fs-1 devicon-postman-plain"></i>` },
     { name: "Docker", icon: `<i class="fs-1 devicon-docker-plain"></i>` },
-    { name: "npm", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
+    { name: "NPM", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
     { name: "JSON", icon: `<i class="fs-1 devicon-json-plain"></i>` },
-    { name: "rxjs", icon: `<i class="fs-1 devicon-rxjs-plain"></i>` },
     // { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
-    { name: "MySql", icon: `<i class="fs-1 devicon-mysql-original"></i>` },
-    // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` },
+    { name: "MySQL", icon: `<i class="fs-1 devicon-mysql-original"></i>` },
+    // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
 ];
 let skillsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
-    { name: "Sticky-Notes", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes" },
-    { name: "Saraha-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App" },
-    { name: "Fresh-Cart-App", type: "Mongoose", category: "c2", framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App-Final" },
+    {
+        name: "Fresh-Cart-App", type: "Mongoose", category: "c2",
+        framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App-Final",
+        documentation: "https://documenter.getpostman.com/view/42697493/2sB3WsMywv"
+    },
 
 ];
 
@@ -111,8 +112,11 @@ ${item.name}
 <i class="fa-solid fa-star"></i>
 </div>
 <div class="linkCon">
-<a href="${item.link}" target="_blank">
+<a href="${item.link}" title="project" target="_blank">
 <i class="fa-solid fa-link"></i>
+</a>
+<a href="${item.documentation}" title="documentation" target="_blank">
+<i class="fa-solid fa-book"></i>
 </a>
 </div>
 <div class="fw-bold">${item.framework}
