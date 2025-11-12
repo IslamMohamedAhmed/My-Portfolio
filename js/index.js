@@ -30,6 +30,9 @@ let skills = [
     { name: "Docker", icon: `<i class="fs-1 devicon-docker-plain"></i>` },
     { name: "NPM", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
     { name: "JSON", icon: `<i class="fs-1 devicon-json-plain"></i>` },
+    {
+        name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>`
+    },
     // { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
     { name: "MySQL", icon: `<i class="fs-1 devicon-mysql-original"></i>` },
     // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
@@ -196,10 +199,10 @@ let palette3 = {
 }
 
 let palette4 = {
-    clr4: "#FAEB92",
-    clr2: "#CC66DA",
-    clr3: "#9929EA",
-    clr1: "#000000"
+    clr4: "#FAF8F1",
+    clr2: "#FAEAB1",
+    clr3: "#34656D",
+    clr1: "#334443"
 }
 
 
