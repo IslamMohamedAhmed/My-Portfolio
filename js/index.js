@@ -30,11 +30,10 @@ let skills = [
     { name: "Docker", icon: `<i class="fs-1 devicon-docker-plain"></i>` },
     { name: "NPM", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
     { name: "JSON", icon: `<i class="fs-1 devicon-json-plain"></i>` },
-    {
-        name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>`
-    },
+    // {
+    //     name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>`
+    // },
     // { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
-    { name: "MySQL", icon: `<i class="fs-1 devicon-mysql-original"></i>` },
     // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
 ];
 let skillsResult = "";
@@ -42,9 +41,24 @@ let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
     {
-        name: "Fresh-Cart-App", type: "Mongoose", category: "c2",
+        name: "Sticky-Notes", type: "Mongoose", category: "c1",
+        framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes",
+        documentation: ""
+    },
+    {
+        name: "Saraha-App", type: "Mongoose", category: "c1",
+        framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Saraha-App",
+        documentation: ""
+    },
+    {
+        name: "Fresh-Cart-App", type: "Mongoose", category: "c1",
         framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Fresh-Cart-App-Final",
         documentation: "https://documenter.getpostman.com/view/42697493/2sB3WsMywv"
+    },
+    {
+        name: "Hospital-System", type: "Prisma", category: "c1",
+        framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Hospital-System",
+        documentation: ""
     },
 
 ];
@@ -108,11 +122,10 @@ $(document).ready(() => {
        <div class="col-md-2 py-5 d-flex justify-content-center align-item-center">
         <div class="mainCon ${item.category}">
 <div class="secCon">
+<i class="fa-solid fa-star"></i>
 <div class="Category">${item.type}</div>
 <div class="title fw-bolder">
-<i class="fa-solid fa-star"></i>
 ${item.name}
-<i class="fa-solid fa-star"></i>
 </div>
 <div class="linkCon">
 <a href="${item.link}" title="project" target="_blank">
