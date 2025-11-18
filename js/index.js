@@ -122,12 +122,6 @@ $(document).ready(() => {
             document.documentElement.style.setProperty(color3, palette3.clr3);
             document.documentElement.style.setProperty(color4, palette3.clr4);
             break;
-        case 'four':
-            document.documentElement.style.setProperty(color1, palette4.clr1);
-            document.documentElement.style.setProperty(color2, palette4.clr2);
-            document.documentElement.style.setProperty(color3, palette4.clr3);
-            document.documentElement.style.setProperty(color4, palette4.clr4);
-            break;
     }
     AOS.init();
 
@@ -288,13 +282,6 @@ let palette3 = {
     clr2: "#00879E",
     clr3: "#FFAB5B",
     clr1: "#FFF2DB"
-}
-
-let palette4 = {
-    clr4: "#FAF8F1",
-    clr2: "#FAEAB1",
-    clr3: "#34656D",
-    clr1: "#334443"
 }
 
 
