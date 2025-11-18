@@ -356,6 +356,9 @@ footer .contactLinks a i {
     border-radius: 30px 0px;
     transition: all .7s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills .txt2:hover {
@@ -386,8 +389,10 @@ footer .contactLinks a i {
 
 .certificates .certificatesImages .certificatesItems div img {
     transform: scale(.8, .8);
-    border-radius: 50px 0px;
-    border: 20px double var(--clr4);
+    border-radius: 50px 10px;
+    border: 10px solid var(--clr4);
+    border-right: none;
+    border-left: none;
 }
 
 .certificates .certificatesImages .certificatesItems .Info {
