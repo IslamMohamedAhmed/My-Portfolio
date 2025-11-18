@@ -10,19 +10,29 @@ let quote = 1;
     { name: "Angular", icon: `<i class="fs-1 devicon-angular-plain"></i>` },
     { name: "Dev Icon", icon: `<i class="fs-1 devicon-devicon-plain"></i>` },
  */
-let skills = [
-    { name: "VS Code", icon: `<i class="fs-1 devicon-vscode-plain"></i>` },
-    { name: "Node Js", icon: `<i class="fs-1 devicon-nodejs-plain"></i>` },
+let ProgrammingLanguages = [
     { name: "JavaScript", icon: `<i class="fs-1 devicon-javascript-plain"></i>` },
     { name: "TypeScript", icon: `<i class="fs-1 devicon-typescript-plain"></i>` },
-    { name: "Express Js", icon: `<i class="fs-1 devicon-express-original"></i>` },
-    { name: "Nodemon", icon: `<i class="fs-1 devicon-nodemon-plain"></i>` },
+];
+let Mappers = [
     { name: "Mongoose", icon: `<i class="fs-1 devicon-mongoose-original"></i>` },
-    { name: "MongoDB", icon: `<i class="fs-1 devicon-mongodb-plain"></i>` },
     { name: "Prisma", icon: `<i class="fs-1 devicon-prisma-original"></i>` },
-    { name: "PostgresQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
-    { name: "GraphQL API's", icon: `<i class="fs-1 devicon-graphql-plain"></i>` },
+    { name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>` },
+];
+let Frameworks = [
+    { name: "Express Js", icon: `<i class="fs-1 devicon-express-original"></i>` },
     { name: "Nest Js", icon: `<i class="fs-1 devicon-nestjs-original"></i>` },
+    { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
+];
+let Databases = [
+    { name: "MongoDB", icon: `<i class="fs-1 devicon-mongodb-plain"></i>` },
+    { name: "MySQL", icon: `<i class="fs-1 devicon-mysql-plain"></i>` },
+    { name: "PostgreSQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
+];
+let Tools = [
+    { name: "VS Code", icon: `<i class="fs-1 devicon-vscode-plain"></i>` },
+    { name: "Nodemon", icon: `<i class="fs-1 devicon-nodemon-plain"></i>` },
+    { name: "GraphQL API's", icon: `<i class="fs-1 devicon-graphql-plain"></i>` },
     { name: "Socket.io", icon: `<i class="fs-1 devicon-socketio-original"></i>` },
     { name: "Git", icon: `<i class="fs-1 devicon-git-plain"></i>` },
     { name: "Github", icon: `<i class="fs-1 devicon-github-original"></i>` },
@@ -30,20 +40,24 @@ let skills = [
     { name: "Docker", icon: `<i class="fs-1 devicon-docker-plain"></i>` },
     { name: "NPM", icon: `<i class="fs-1 devicon-npm-original-wordmark"></i>` },
     { name: "JSON", icon: `<i class="fs-1 devicon-json-plain"></i>` },
-    // {
-    //     name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>`
-    // },
-    // { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
-    // { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
+]
+let RuntimeEnvironments = [
+    { name: "Node Js", icon: `<i class="fs-1 devicon-nodejs-plain"></i>` },
+    { name: "Bun", icon: `<i class="fs-1 devicon-bun-plain"></i>` },
 ];
-let skillsResult = "";
+let ProgrammingLanguagesResult = "";
+let MappersResult = "";
+let FrameworksResult = "";
+let DatabasesResult = "";
+let ToolsResult = "";
+let RuntimeEnvironmentsResult = "";
 let ProjectsResult = "";
 let CertificatesResult = "";
 let Projects = [
     {
         name: "Sticky-Notes", type: "Mongoose", category: "c1",
         framework: "Express Js", link: "https://github.com/IslamMohamedAhmed/Sticky-Notes",
-        documentation: ""
+        documentation: "https://documenter.getpostman.com/view/42697493/2sB3WwqHeM"
     },
     {
         name: "Saraha-App", type: "Mongoose", category: "c1",
@@ -175,18 +189,83 @@ ${item.name}
         }
     });
 
-    skills.forEach(item => {
-        skillsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    ProgrammingLanguages.forEach(item => {
+        ProgrammingLanguagesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
     });
 
 
-    $(".skillsItems").html(skillsResult);
+    $(".ProgrammingLanguagesItems").html(ProgrammingLanguagesResult);
 
 
-})
+});
+
+Mappers.forEach(item => {
+    MappersResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
+            </li>`
+});
+
+
+$(".MappersItems").html(MappersResult);
+
+
+
+
+Frameworks.forEach(item => {
+    FrameworksResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
+            </li>`
+});
+
+
+$(".FrameworksItems").html(FrameworksResult);
+
+
+
+
+Databases.forEach(item => {
+    DatabasesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
+            </li>`
+});
+
+
+$(".DatabasesItems").html(DatabasesResult);
+
+
+
+
+Tools.forEach(item => {
+    ToolsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
+            </li>`
+});
+
+
+$(".ToolsItems").html(ToolsResult);
+
+
+
+
+RuntimeEnvironments.forEach(item => {
+    RuntimeEnvironmentsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ${item.icon}
+              <div class="my-3 fs-4 py-3">${item.name}</div>
+            </li>`
+});
+
+
+$(".JSRuntimeEnvironmentsItems").html(RuntimeEnvironmentsResult);
+
+
+
 
 
 
