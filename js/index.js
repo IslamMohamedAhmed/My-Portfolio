@@ -17,16 +17,12 @@ let ProgrammingLanguages = [
 let Mappers = [
     { name: "Mongoose", icon: `<i class="fs-1 devicon-mongoose-original"></i>` },
     { name: "Prisma", icon: `<i class="fs-1 devicon-prisma-original"></i>` },
-    { name: "Sequelize", icon: `<i class="fs-1 devicon-sequelize-plain"></i>` },
 ];
 let Frameworks = [
     { name: "Express Js", icon: `<i class="fs-1 devicon-express-original"></i>` },
-    { name: "Nest Js", icon: `<i class="fs-1 devicon-nestjs-original"></i>` },
-    { name: "Fastify", icon: `<i class="fs-1 devicon-fastify-plain"></i>` }
-];
+    { name: "Nest Js", icon: `<i class="fs-1 devicon-nestjs-original"></i>` },];
 let Databases = [
     { name: "MongoDB", icon: `<i class="fs-1 devicon-mongodb-plain"></i>` },
-    { name: "MySQL", icon: `<i class="fs-1 devicon-mysql-plain"></i>` },
     { name: "PostgreSQL", icon: `<i class="fs-1 devicon-postgresql-plain"></i>` },
 ];
 let Tools = [
@@ -298,6 +294,7 @@ const color4 = "--clr4";
 
 
 
+
 $('.theme1').click(() => {
 
     localStorage.setItem('palette', 'one');
@@ -325,15 +322,7 @@ $('.theme3').click(() => {
     document.documentElement.style.setProperty(color4, palette3.clr4);
 
 });
-$('.theme4').click(() => {
 
-    localStorage.setItem('palette', 'four');
-    document.documentElement.style.setProperty(color1, palette4.clr1);
-    document.documentElement.style.setProperty(color2, palette4.clr2);
-    document.documentElement.style.setProperty(color3, palette4.clr3);
-    document.documentElement.style.setProperty(color4, palette4.clr4);
-
-});
 
 
 

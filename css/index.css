@@ -823,6 +823,9 @@ iframe {
         padding: 15px;
     }
 
+    .txt2{
+        transform: scale(0.8);
+    }
 
 
 
