@@ -119,7 +119,6 @@ $(document).ready(() => {
             document.documentElement.style.setProperty(color4, palette3.clr4);
             break;
     }
-    AOS.init();
 
     Projects.forEach(item => {
         ProjectsResult += ` 
@@ -150,7 +149,7 @@ ${item.name}
 
     certificates.forEach(item => {
         CertificatesResult += `
-        <div data-aos="zoom-out" class="my-5 certificatesItems col-md-4">
+        <div class="my-5 certificatesItems col-md-4">
        
       <div class="item">
         <div>
@@ -180,7 +179,7 @@ ${item.name}
     });
 
     ProgrammingLanguages.forEach(item => {
-        ProgrammingLanguagesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+        ProgrammingLanguagesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
@@ -193,7 +192,7 @@ ${item.name}
 });
 
 Mappers.forEach(item => {
-    MappersResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    MappersResult += `<li class="col-md-3 d-flex flex-column my-3 px-5">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
@@ -206,7 +205,7 @@ $(".MappersItems").html(MappersResult);
 
 
 Frameworks.forEach(item => {
-    FrameworksResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    FrameworksResult += `<li class="col-md-3 d-flex flex-column my-3 px-5">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
@@ -219,7 +218,7 @@ $(".FrameworksItems").html(FrameworksResult);
 
 
 Databases.forEach(item => {
-    DatabasesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    DatabasesResult += `<li class="col-md-3 d-flex flex-column my-3 px-5">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
@@ -232,7 +231,7 @@ $(".DatabasesItems").html(DatabasesResult);
 
 
 Tools.forEach(item => {
-    ToolsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    ToolsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" >
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`
@@ -245,7 +244,7 @@ $(".ToolsItems").html(ToolsResult);
 
 
 RuntimeEnvironments.forEach(item => {
-    RuntimeEnvironmentsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5" data-aos="fade-up">
+    RuntimeEnvironmentsResult += `<li class="col-md-3 d-flex flex-column my-3 px-5">
         ${item.icon}
               <div class="my-3 fs-4 py-3">${item.name}</div>
             </li>`

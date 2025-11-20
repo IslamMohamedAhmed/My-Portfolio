@@ -346,7 +346,7 @@ footer .contactLinks a i {
 }
 
 .skills .txt2 {
-    font-size: 25px !important;
+    font-size: 25px;
     font-weight: bold;
     color: var(--clr4);
     border: 10px solid var(--clr4);
@@ -362,12 +362,9 @@ footer .contactLinks a i {
 }
 
 .skills .txt2:hover {
-    font-size: 25px !important;
-    font-weight: bold;
+    
     color: var(--clr1) !important;
-    border: 10px solid var(--clr4);
     background-color: var(--clr4);
-    color: var(--clr4);
     border-radius: 0px 30px;
 }
 
@@ -824,7 +821,7 @@ iframe {
     }
 
     .txt2{
-        transform: scale(0.8);
+        font-size: 16px !important;
     }
 
 
